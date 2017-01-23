@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+	}
+	body,html{
+		height: 100%;
+	}
+	#wrapper{
+		min-height: 100%;
+	}
+	#wrapper:after{
+	min-height: 100px;/*высота обложки*/
+    content: "";
+    display: block;
+    margin-bottom: -60px;/*высота футера*/
+	}
+	#footer{
+		height: 60px;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrapper" style="background: red"><p>wrapper</p></div>
+	<div id="footer" style="background: blue">footer</div>
+</body>
+</html>
